@@ -9,37 +9,10 @@
 </head>
 
 <body>
-<br><br><br><br><br>
-<a id="button" href="index.html" class="previous round">&#8249;</a>
-<form method="Post" name="google-sheet">
-
-  <div class="wrapper centered">
-    <article class="letter">
-      <div class="side">
-        <h1>Contact us</h1>
-        <p>
-          <textarea placeholder="Your message" name="Message"></textarea>
-        </p>
-      </div>
-      <div class="side">
-        <p>
-          <input type="text" name="Name" placeholder="Your name">
-        </p>
-        <p>
-          <input type="email" name="Email" placeholder="Your email">
-        </p>
-        <p>
-          <button id="sendLetter" type="submit" value="submit" name="submit">Send</button>
-        </p>
-      </div>
-    </article>
-</form>
-    <div class="envelope front"></div>
-    <div class="envelope back"></div>
-  </div>
-  <!-- <p class="result-message centered" id="result-message">Thank you for your message</p> -->
 
 
+  <div class="visme_d" data-title="Untitled Project" data-url="0174jmg6-untitled-project?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="79734"></div>
+  <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
 
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzsbk2gJrk9kKtncEN0cuRQ9u3_CAwFYdeIO4pnYc-Ap4ZCX0FYNtKTsnj2znoSes2RlA/exec'
@@ -52,16 +25,6 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-
-
-  <script>
-    function addClass() {
-      document.body.classList.add("sent");
-    }
-
-    sendLetter.addEventListener("click", addClass);
-  </script>
-
 </body>
 
 </html>
