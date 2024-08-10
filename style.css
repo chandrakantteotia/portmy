@@ -265,6 +265,27 @@ p {
 /* End Hero Section */
 
 /* Services Section */
+#whatsapp{
+	height: 50px;
+	width: 50px;
+	/* position: absolute; */
+	top: 87%;
+	right: 2%;
+	position: fixed;
+	z-index: 1;
+	animation:  move 1.5s 1s infinite linear;
+}
+@keyframes move{
+0%{
+	transform: translateY(-10px);
+}
+50%{
+	transform: translateY(0px);
+}
+100%{
+	transform: translateY(-10px);
+}
+}
 #services .services {
 	flex-direction: column;
 	text-align: center;
@@ -295,7 +316,7 @@ p {
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
-	z-index: 1;
+	/* z-index: ; */
 	overflow: hidden;
 }
 #services .service-item::after {
@@ -567,6 +588,12 @@ p {
 /* End Keyframes */
 
 /* Media Query For Tablet */
+@media only screen and (max-width: 768px){
+	#whatsapp{
+		right: 6%;
+	}
+}
+
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -575,7 +602,7 @@ p {
 	h1.section-title {
 		font-size: 6rem;
 	}
-
+	
 	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
@@ -672,6 +699,11 @@ p {
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
+@media only screen and (max-width: 1200px){
+	#whatsapp{
+		right: 6%;
+	}
+}
 @media only screen and (min-width: 1200px) {
 	/* header */
 	#header .hamburger {
