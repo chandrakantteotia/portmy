@@ -23,3 +23,11 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+let  loader = document.getElementById("preloader");
+let over = document.getElementsByTagName("body");
+window.addEventListener("load",function(){
+    loader.style.display = "none";
+over.style.display = "none";
+})
+
