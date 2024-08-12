@@ -74,7 +74,7 @@ p {
 /* Header section */
 #header {
 	position: fixed;
-	z-index: 1000;
+	z-index: 10;
 	left: 0;
 	top: 0;
 	width: 100vw;
@@ -742,3 +742,16 @@ p {
 	top: 20px;
 	text-decoration: underline;
 }
+
+
+
+#preloader{
+	background:#000 url(chandrkant.gif) no-repeat center center ;
+	background-size: 20%;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	overflow: hidden;
+  
+  }
