@@ -795,6 +795,7 @@ p {
 /* Media Query For Tablet */
 @media only screen and (max-width: 768px) {
   #whatsapp {
+    top: 86%;
     right: 6%;
   }
 
