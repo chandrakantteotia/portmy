@@ -31,26 +31,23 @@ window.addEventListener("load", function () {
 	over.style.display = "none";
 })
 function openFunction() {
-	// document.getElementById("wha").style.display = "block";
 	document.getElementById("wha").style.transform = "scaleY(1)";
-
-	document.getElementById("closeWha").style.display = "flex";
-	document.getElementById("whatsapp").style.display = "none";
+	document.getElementById("closeWha").style.transform = "scale(1)";
+	document.getElementById("whatsapp").style.transform = "scale(0.0)";
 	document.getElementById("wha").style.transform = "scale(1)";
 	document.getElementById("suggest").style.display = "inline";
 	document.getElementById("app").style.display = "none";
 	document.getElementById("click").style.transform = "scale(1)";
+	document.getElementById("click").style.opacity = "1";
+
 }
 
 function closewwhaFunction() {
-	document.getElementById("whatsapp").style.display = "block";
-	// document.getElementById("wha").style.display = "none";
-	// document.getElementById("wha").style.transform = "scaleY(0.0)";
+	document.getElementById("whatsapp").style.transform = "scale(1)";
 	document.getElementById("wha").style.transform = "scaleY(0.0)";
-
 	document.getElementById("suggest").style.display = "none";
 	document.getElementById("app").style.display = "inline";
 	document.getElementById("click").style.transform = "scale(0.0)";
-
-	document.getElementById("closeWha").style.display = "none";
+	document.getElementById("click").style.opacity = "0";
+	document.getElementById("closeWha").style.transform = "scale(0.0)";
 }
