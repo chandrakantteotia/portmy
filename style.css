@@ -324,6 +324,7 @@ p {
   /* display: none; */
   transform: scale(0.0);
   transition: 0.3s ease;
+  
 }
 .closeWha img {
   height: 30px;
@@ -396,7 +397,7 @@ p {
   border: 1px solid black;
   padding: 1px 5px 1px 5px;
   position: absolute;
-  top: 499px;
+  top: 508px;
   right: 90px;
   animation: move 1.5s 1s infinite linear;
   position: fixed;
@@ -424,7 +425,20 @@ p {
   z-index: 1;
   transition: 0.3s ease;
  
+ 
 }
+.bling{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 488.7px;
+  right: 24px;
+  background-color: greenyellow;
+  position: fixed;
+  animation: hamburger_puls 1s ease infinite;
+}
+
 
 
 
@@ -798,12 +812,14 @@ p {
   }
 
   .suggest {
-    top: 60px;
+    top: 640px;
 
     position: fixed;
   }
   .suggest::after {
-    left: 91.5px;
+    top: 649.3px;
+    z-index: -1;
+    left: 74%;
     position: fixed;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   }
@@ -812,6 +828,13 @@ p {
   }
   #suggest::after {
     left: 50px;
+  }
+  #click{
+    width: 320px;
+  }
+  .bling{
+  right: 23px;
+  top: 634px;
   }
 }
 
