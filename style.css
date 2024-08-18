@@ -321,7 +321,8 @@ p {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  display: none;
+  /* display: none; */
+  transform: scale(0.0);
   transition: 0.3s ease;
 }
 .closeWha img {
@@ -417,28 +418,15 @@ p {
 #whatsapp {
   height: 50px;
   width: 50px;
-  /* position: absolute; */
   top: 87%;
   right: 2%;
   position: fixed;
   z-index: 1;
-  animation: move 1.5s 1s infinite linear;
-  transform: rotate(0deg);
+  transition: 0.3s ease;
+ 
 }
 
-@keyframes move {
-  0% {
-    transform: translateY(-10px);
-  }
 
-  50% {
-    transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(-10px);
-  }
-}
 
 #services .services {
   flex-direction: column;
@@ -810,7 +798,7 @@ p {
   }
 
   .suggest {
-    top: 650px;
+    top: 60px;
 
     position: fixed;
   }
