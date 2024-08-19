@@ -795,7 +795,7 @@ p {
 /* Media Query For Tablet */
 @media only screen and (max-width: 768px) {
   #whatsapp {
-    /* top: 87%; */
+    top: 86%;
     right: 6%;
   }
 
@@ -993,11 +993,7 @@ p {
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
-@media only screen and (max-width: 1200px) {
-  #whatsapp {
-    right: 6%;
-  }
-}
+
 
 @media only screen and (min-width: 1200px) {
   /* header */
