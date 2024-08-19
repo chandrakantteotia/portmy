@@ -1180,6 +1180,11 @@ p {
   height: 30px;
   width: 30px;
   cursor: pointer;
+  transition: 0.3s ease;
+ 
+}
+.close img:hover{
+  transform: rotate(90deg);
 }
 .imgcon{
   height: 100px;
