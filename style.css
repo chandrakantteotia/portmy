@@ -795,7 +795,7 @@ p {
 /* Media Query For Tablet */
 @media only screen and (max-width: 768px) {
   #whatsapp {
-    top: 86%;
+    /* top: 87%; */
     right: 6%;
   }
 
@@ -837,6 +837,35 @@ p {
   right: 23px;
   top: 634px;
   }
+  #popup{
+    height: 500px;
+    width: 360px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    position: fixed;
+  }
+  #close{
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  #popup button{
+    margin-left: 30px;
+  }
+  .imgcon{
+    margin-top: 40px;
+
+  }
+#popup h1{
+  height: 90px;
+  justify-content: center;
+  justify-items: center;
+  font-size: 32px;
+}
+#popup p{
+  font-size: 16px;
+  height: 40px;
+}
 }
 
 @media only screen and (min-width: 768px) {
@@ -1125,4 +1154,84 @@ p {
   height: 30px;
   width: 30px;
   margin-right: 10px;
+}
+
+.popup{
+ 
+  height: 400px;
+  width: 500px;
+  border-radius: 10px;
+  background:linear-gradient(60deg,#e6ba40,#dbb251,#cdcd4e,#bb4889,#e1306c,#fd1d1d);
+  transition: 0.3s ease;
+  transform: scaleX(0.0);
+  z-index: 999;
+  position:absolute ;
+  top: 100px;
+ left: 30%;
+ position: fixed;
+}
+.close{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  /* background-color: rgb(11, 255, 255); */
+}
+.close img{
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.imgcon{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.imgcon img{
+  height: 80px;
+  width: 80px;
+}
+#heading{
+  height: 60px;
+  font-size: 35px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  /* background-color: aqua; */
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup p{
+  height: 70px;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #cdcd4e; */
+}
+.popup button{
+  margin-top: 30px;
+  margin-left: 90px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+}
+.popup button a{
+  text-decoration: none;
+  color: black;
 }
