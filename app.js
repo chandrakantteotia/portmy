@@ -59,12 +59,12 @@ function closewwhaFunction() {
 window.addEventListener("load",function(){
   setTimeout(
       function open(event){
-          document.querySelector(".popup").style.transform ="scaleX(1)";
+          document.querySelector(".popup").style.transform =" translate(0%)";
       },
       10000
   )
 })
 
 document.querySelector("#close").addEventListener("click",function(){
-  document.querySelector(".popup").style.transform ="scaleX(0.0)";
+  document.querySelector(".popup").style.transform =" translate(-180%)";
 })
