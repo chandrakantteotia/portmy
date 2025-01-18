@@ -814,7 +814,7 @@ p {
     background-size: 80%;
   }
   #wha {
-    right: 30px;
+    right: 17px;
     top: 340px;
     height: 280px;
     width: 330px;
@@ -845,14 +845,14 @@ p {
     width: 320px;
   }
   .bling{
-  right: 23px;
-  top: 634px;
+  right: 20px;
+  top: 592px;
   }
   #popup{
     height: 458px;
     width: 339px;
-    top: 37px;
-    left: 83px;
+    top: 87px;
+    left: 128px;
     right: 30px;
     position: fixed;
   }
@@ -871,17 +871,18 @@ p {
   height: 90px;
   justify-content: center;
   justify-items: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 #popup p{
   font-size: 16px;
   height: 40px;
+  text-align: center;
 }
 }
 @media only screen and (max-width:406px) {
+
   #popup{
-    
-    height: 483px;
+    height: 462px;
     width: 289px;
     top: 59px;
     left: 4px;
@@ -898,6 +899,7 @@ p {
 }
 #popup button{
   width: 230px;
+  margin-left: 40px;
 }
 }
 @media only screen and (max-width:420px) {
@@ -910,6 +912,11 @@ p {
     width: 250px;
   }
 }
+/* @media only screen and (max-width:650px) {
+  #popup{
+    left: 400px;
+  }
+} */
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
