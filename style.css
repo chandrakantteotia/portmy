@@ -4,8 +4,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* background-color: #000; */
+}
+:root{
+  --black:#000000;
+  --white:rgb(255, 255, 255);
+  --crimson : crimson;
 }
 
+body{
+  /* background-color: var(--black); */
+
+  /* color: var(--white); */
+}
 html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
@@ -31,7 +42,7 @@ img {
 }
 
 p {
-  color: black;
+  color: var(--black);
   font-size: 1.4rem;
   margin-top: 5px;
   line-height: 2.5rem;
@@ -42,7 +53,7 @@ p {
 .section-title {
   font-size: 4rem;
   font-weight: 300;
-  color: black;
+  color: var(--black);
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -50,15 +61,15 @@ p {
 }
 
 .section-title span {
-  color: crimson;
+  color:var(--crimson) ;
 }
 
 .cta {
   display: inline-block;
   padding: 10px 30px;
-  color: white;
+  color: var(--white);
   background-color: transparent;
-  border: 2px solid crimson;
+  border: 2px solid var(--crimson);
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -68,7 +79,7 @@ p {
 }
 
 .cta:hover {
-  color: white;
+  color: var(--white);
   background-color: crimson;
 }
 
@@ -838,11 +849,11 @@ p {
   top: 634px;
   }
   #popup{
-    height: 500px;
-    width: 360px;
-    position: absolute;
-    top: 150px;
-    left: 10px;
+    height: 458px;
+    width: 339px;
+    top: 37px;
+    left: 83px;
+    right: 30px;
     position: fixed;
   }
   #close{
@@ -860,14 +871,45 @@ p {
   height: 90px;
   justify-content: center;
   justify-items: center;
-  font-size: 32px;
+  font-size: 30px;
 }
 #popup p{
   font-size: 16px;
   height: 40px;
 }
 }
-
+@media only screen and (max-width:406px) {
+  #popup{
+    
+    height: 483px;
+    width: 289px;
+    top: 59px;
+    left: 4px;
+    right: 30px;
+    position: fixed;
+    }
+#popup p{
+  padding-left: 28px;
+  font-size: 17px;
+  text-align: center;
+}
+#popup h1{
+  font-size: 22px;
+}
+#popup button{
+  width: 230px;
+}
+}
+@media only screen and (max-width:420px) {
+  #popup{
+    left: 15px;
+    top: 90px;
+    width: 330px;
+  }
+  #popup button{
+    width: 250px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
@@ -1028,7 +1070,11 @@ p {
     margin: 1.5%;
   }
 }
-
+@media only screen and (max-width:786px) {
+  .popup{
+    width: 400px;
+  }
+}
 /* End  Media Query For Desktop */
 
 .website-link {
@@ -1166,6 +1212,7 @@ p {
  left: 30%;
  position: fixed;
  border: 1px solid black;
+ 
 }
 .close{
   height: 40px;
@@ -1226,7 +1273,7 @@ p {
   margin-top: 30px;
   margin-left: 90px;
   height: 50px;
-  width: 300px;
+  width: 275px;
   display: flex;
   justify-content: center;
   align-items: center;
